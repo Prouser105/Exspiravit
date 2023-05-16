@@ -12,7 +12,7 @@ public class Portal : MonoBehaviour
     bool isFirst = true;
     void OnBecameVisible()
     {
-        if (isFirst)
+        if (isFirst && SceneManager.GetActiveScene().buildIndex == 0)
         {
             audioManager.PlaySoundtrack("vita animarum");
             isFirst = false;
@@ -24,7 +24,7 @@ public class Portal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Corridors");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         
     }

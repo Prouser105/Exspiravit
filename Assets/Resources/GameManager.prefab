@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5563111739974484551
+--- !u!1 &3674137727841756158
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5563111739974484549}
-  - component: {fileID: 5563111739974484548}
-  - component: {fileID: 5563111739974484602}
+  - component: {fileID: 3674137727841756156}
+  - component: {fileID: 3674137727841756157}
+  - component: {fileID: 3674137727841756099}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5563111739974484549
+--- !u!4 &3674137727841756156
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5563111739974484551}
+  m_GameObject: {fileID: 3674137727841756158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 115.05897, y: -4.9087706, z: 152.64375}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5563111739974484548
+--- !u!114 &3674137727841756157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5563111739974484551}
+  m_GameObject: {fileID: 3674137727841756158}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00915dfec3a0e234da003853e5b6acc1, type: 3}
@@ -48,13 +48,13 @@ MonoBehaviour:
   playerPrefab: {fileID: 7304636237820543410, guid: 5fbcfaf58a70ce64f80779120246939c,
     type: 3}
   spawnPoint: {fileID: 0}
---- !u!114 &5563111739974484602
+--- !u!114 &3674137727841756099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5563111739974484551}
+  m_GameObject: {fileID: 3674137727841756158}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13ccd6ba477625b4c9148716863669c7, type: 3}
@@ -63,3 +63,5 @@ MonoBehaviour:
   soundtracks:
   - {fileID: 8300000, guid: f320efd7ecb32934996cb8c65e5f2803, type: 3}
   - {fileID: 8300000, guid: d6d63f82e56c091489bd7e3429d746b6, type: 3}
+  - {fileID: 8300000, guid: 1a2aa410040778f4f983d0136b5773ba, type: 3}
+  - {fileID: 8300000, guid: 405f2a470e8186f4e9a1e32222219cb6, type: 3}

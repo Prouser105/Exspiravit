@@ -15,13 +15,21 @@ public class GameManager : MonoBehaviour
         playerPrefab.TryGetComponent(out FadeCamera fadeCamera);
         fadeCamera.gameStart = true;
 
-        
+
 
 
     }
 
     public void SpawnPlayer()
     {
-        Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(playerPrefab, spawnPoint.position, Quaternion.identity);
+        
+
+        // Получить компонент камеры игрока
+        Camera playerCamera = playerPrefab.GetComponentInChildren<Camera>();
+
+        // Изменить вращение камеры
+        playerCamera.transform.rotation = Quaternion.Euler(90f, 0f, 0f); // Смотреть в сторону оси Z
     }
 }
+
