@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -12,7 +11,7 @@ public class Trigger : MonoBehaviour
     private Player player;
     public GameObject[] objs;
     public GameObject[] souls;
-    public GameObject part;
+   
     public AudioManager audioManager;
     public Portal portal;
 
@@ -44,7 +43,7 @@ public class Trigger : MonoBehaviour
 
             while (index < souls.Length)
             {
-                part.gameObject.SetActive(true);
+                objs[index].gameObject.SetActive(true);
                 souls[index].gameObject.SetActive(true);
                 
                 if(souls[index].TryGetComponent(out Soul soul)) soul.go = true;
